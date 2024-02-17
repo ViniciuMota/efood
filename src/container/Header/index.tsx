@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import StyledHeader from './styles'
+import StyledHeader from './style'
 import efoodLogo from '../../assets/images/logo.svg'
 
 const Header = () => (

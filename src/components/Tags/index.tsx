@@ -1,4 +1,4 @@
-import StyledCardTag from './styles'
+import StyledCardTag from './style'
 
 type Props = {
   children: string

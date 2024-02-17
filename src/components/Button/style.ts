@@ -15,10 +15,11 @@ export const StyledCardButton = styled(Link)`
 export const StyledMenuItemButton = styled.button`
   background-color: #ffebd9;
   height: 24px;
+  border: none;
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 16.41px;
+  line-height: 16px;
 
   display: flex;
   justify-content: center;

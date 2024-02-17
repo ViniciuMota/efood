@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { cores } from './variaveis'
+import { estilo } from './variaveis'
 
 const EstiloGlobal = createGlobalStyle`
   * {
@@ -7,7 +7,7 @@ const EstiloGlobal = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: ${cores.corDaFonte};
+    color: ${estilo.corDaFonte};
   }
 
   .container {

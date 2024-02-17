@@ -1,12 +1,15 @@
-import { StyledMenuItemButton } from '../Button/styles'
+import { StyledMenuItemButton } from '../Button/style'
 
-import StyledModal, { StyledModalContainer } from './styles'
+import StyledModal, { StyledModalContainer } from './style'
 import btn_close from '../../assets/images/btn_close.png'
 
 import { MenuItemModalProps } from '../../utilities/types'
 import { formataPreco } from '../../utilities/helper'
+import { useDispatch } from 'react-redux'
+import { addIten } from '../../store/reducers/cart'
 
 const ModalItem = (props: MenuItemModalProps) => {
+  const dispatch = useDispatch()
   if (!props.showModal) return <></>
 
   return (
@@ -27,7 +30,13 @@ const ModalItem = (props: MenuItemModalProps) => {
             <br />
             Serve: de {props.porcao}
           </p>
-          <StyledMenuItemButton>
+          <StyledMenuItemButton
+            onClick={() => {
+              const { id, nome, descricao, foto, porcao, preco } = props
+              const data = { id, nome, descricao, foto, porcao, preco }
+              dispatch(addIten(data))
+            }}
+          >
             Adicionar ao carrinho - {formataPreco(props.preco)}
           </StyledMenuItemButton>
         </div>
