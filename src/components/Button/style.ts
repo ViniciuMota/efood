@@ -14,9 +14,7 @@ export const StyledCardButton = styled(Link)`
 
 export const StyledMenuItemButton = styled.button`
   background-color: #ffebd9;
-  width: 100%;
   height: 24px;
-  border: none;
 
   font-size: 14px;
   font-weight: 700;

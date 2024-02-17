@@ -4,13 +4,21 @@ export type CardProps = {
   desciption: string
   tags: string[]
   note: number
-  page: string
+  page: number
 }
 
-export type MenuItemProps = {
-  item_name: string
-  item_description: string
-  item_image: string
+export interface MenuItemProps {
+  id: number
+  nome: string
+  descricao: string
+  preco: number
+  porcao: string
+  foto: string
+}
+
+export interface MenuItemModalProps extends MenuItemProps {
+  showModal: boolean
+  toggleModal: () => void
 }
 
 export type RestaurantPageProps = {
@@ -18,4 +26,15 @@ export type RestaurantPageProps = {
   food_type: string
   hero_image: string
   menu_itens: MenuItemProps[]
+}
+
+export type RestauranteApiProps = {
+  id: number
+  titulo: string
+  destacado: boolean
+  tipo: string
+  avaliacao: number
+  descricao: string
+  capa: string
+  cardapio: MenuItemProps[]
 }
