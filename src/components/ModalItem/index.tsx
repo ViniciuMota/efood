@@ -1,6 +1,6 @@
-import { StyledMenuItemButton } from '../Button/style'
+import { StyledMenuItemButton } from '../Button/styles'
 
-import StyledModal, { StyledModalContainer } from './style'
+import StyledModal, { StyledModalContainer } from './styles'
 import btn_close from '../../assets/images/btn_close.png'
 
 import { MenuItemModalProps } from '../../utilities/types'

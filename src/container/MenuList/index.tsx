@@ -1,4 +1,4 @@
-import StyledMenuList from './style'
+import StyledMenuList from './styles'
 
 import Hero from '../Hero'
 

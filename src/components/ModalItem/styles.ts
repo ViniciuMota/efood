@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { StyledMenuItemButton } from '../Button/style'
+import { StyledMenuItemButton } from '../Button/styles'
 
 const StyledModal = styled.div`
   height: 100vh;
