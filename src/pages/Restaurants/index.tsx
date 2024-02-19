@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 
-import HeaderWithCart from '../../container/HeaderWithCart'
-import MenuList from '../../container/MenuList'
+import HeaderWithCart from '../../components/HeaderWithCart'
+import MenuList from '../../components/MenuList'
 
 import { useEffect, useState } from 'react'
 import { RestauranteApiProps } from '../../utilities/types'

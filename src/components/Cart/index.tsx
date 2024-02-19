@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleCartDisplay } from '../../store/reducers/cart'
 import { RootReducer } from '../../store'
 
-import CartCard from '../../components/CartCard'
+import CartCard from '../CartCard'
 import StyledCart, {
   StyledOverlay,
   StyledCartContainer,

@@ -2,7 +2,7 @@ import StyledMenuList from './style'
 
 import Hero from '../Hero'
 
-import MenuItem from '../../components/MenuItem'
+import MenuItem from '../MenuItem'
 import { RestauranteApiProps } from '../../utilities/types'
 
 const MenuList = (props: RestauranteApiProps) => (

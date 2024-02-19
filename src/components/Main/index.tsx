@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import StyledMain from './style'
 
-import Card from '../../components/Card'
+import Card from '../Card'
 import { RestauranteApiProps } from '../../utilities/types'
 
 const Main = () => {
