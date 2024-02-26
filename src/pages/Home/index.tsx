@@ -1,5 +1,5 @@
-import Header from '../../components/Header'
-import Main from '../../components/Main'
+import Header from '../../container/Header'
+import Main from '../../container/Main'
 
 const Home = () => {
   document.title = 'eFood'

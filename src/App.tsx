@@ -6,10 +6,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Restaurants from './pages/Restaurants'
 
-import Footer from './components/Footer'
+import Footer from './container/Footer'
 
 import EstiloGlobal from './styles'
-import Cart from './components/Cart'
+import SideBar from './container/SideBar'
 
 const Rotas = () => (
   <Routes>
@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
         <EstiloGlobal />
         <Rotas />
-        <Cart />
+        <SideBar />
         <Footer />
       </BrowserRouter>
     </Provider>
